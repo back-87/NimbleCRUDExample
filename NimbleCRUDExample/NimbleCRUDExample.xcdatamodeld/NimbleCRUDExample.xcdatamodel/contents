@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E230" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="TestEntity" representedClassName="TestEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="sequential" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testAttribBinary" optional="YES" attributeType="Binary"/>
+        <attribute name="testAttribBool" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="testAttribDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="testAttribDecimal" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="testAttribDouble" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="testAttribFloat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="testAttribInt16" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testAttribInt32" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testAttribInt64" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="testAttribString" optional="YES" attributeType="String"/>
+        <attribute name="testAttribURI" optional="YES" attributeType="URI"/>
+        <attribute name="testAttribUUID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="TestEntity" positionX="-63" positionY="-18" width="128" height="239"/>
+    </elements>
+</model>

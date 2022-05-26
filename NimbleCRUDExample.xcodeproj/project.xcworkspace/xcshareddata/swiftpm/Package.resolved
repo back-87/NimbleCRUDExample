@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "nimblecrud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/back-87/NimbleCRUD.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f9543730716f4c492250ab193878d9d0bbb629e4"
+      }
+    },
+    {
+      "identity" : "scrollviewproxy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/back-87/ScrollViewProxy.git",
+      "state" : {
+        "revision" : "cdc501ee8d071452e10d5dc807475e7b3c93789e",
+        "version" : "1.0.4"
+      }
+    },
+    {
+      "identity" : "swiftui-introspect",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/siteline/SwiftUI-Introspect.git",
+      "state" : {
+        "revision" : "f2616860a41f9d9932da412a8978fec79c06fe24",
+        "version" : "0.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}

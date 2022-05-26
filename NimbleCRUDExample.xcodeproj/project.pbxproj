@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A3AEFD427F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */; };
+		3A3AEFD627F76B5D00C61CB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */; };
+		3A3AEFD827F76B5E00C61CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */; };
+		3A3AEFDB27F76B5E00C61CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */; };
+		3A3AEFDD27F76B5E00C61CB7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */; };
+		3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */; };
+		3A3AEFE827F76C6400C61CB7 /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */; };
+		3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */; };
+		3AFA586E27F7702E0086D0B2 /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3AFA586D27F7702E0086D0B2 /* NimbleCRUD */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A3AEFD027F76B5D00C61CB7 /* NimbleCRUDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleCRUDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleCRUDExampleApp.swift; sourceTree = "<group>"; };
+		3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		3A3AEFDF27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NimbleCRUDExample.xcdatamodel; sourceTree = "<group>"; };
+		3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCoreDataTesting.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A3AEFCD27F76B5D00C61CB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEFE827F76C6400C61CB7 /* NimbleCRUD in Frameworks */,
+				3AFA586E27F7702E0086D0B2 /* NimbleCRUD in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A3AEFC727F76B5C00C61CB7 = {
+			isa = PBXGroup;
+			children = (
+				3A3AEFD227F76B5D00C61CB7 /* NimbleCRUDExample */,
+				3A3AEFD127F76B5D00C61CB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A3AEFD127F76B5D00C61CB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEFD027F76B5D00C61CB7 /* NimbleCRUDExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A3AEFD227F76B5D00C61CB7 /* NimbleCRUDExample */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */,
+				3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */,
+				3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */,
+				3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */,
+				3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */,
+				3A3AEFD927F76B5E00C61CB7 /* Preview Content */,
+				3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */,
+			);
+			path = NimbleCRUDExample;
+			sourceTree = "<group>";
+		};
+		3A3AEFD927F76B5E00C61CB7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A3AEFCF27F76B5D00C61CB7 /* NimbleCRUDExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A3AEFE327F76B5E00C61CB7 /* Build configuration list for PBXNativeTarget "NimbleCRUDExample" */;
+			buildPhases = (
+				3A3AEFCC27F76B5D00C61CB7 /* Sources */,
+				3A3AEFCD27F76B5D00C61CB7 /* Frameworks */,
+				3A3AEFCE27F76B5D00C61CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NimbleCRUDExample;
+			packageProductDependencies = (
+				3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */,
+				3AFA586D27F7702E0086D0B2 /* NimbleCRUD */,
+			);
+			productName = NimbleCRUDExample;
+			productReference = 3A3AEFD027F76B5D00C61CB7 /* NimbleCRUDExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A3AEFC827F76B5C00C61CB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3A3AEFCF27F76B5D00C61CB7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 3A3AEFCB27F76B5C00C61CB7 /* Build configuration list for PBXProject "NimbleCRUDExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A3AEFC727F76B5C00C61CB7;
+			packageReferences = (
+				3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */,
+				3AFA586C27F7702E0086D0B2 /* XCRemoteSwiftPackageReference "NimbleCRUD" */,
+			);
+			productRefGroup = 3A3AEFD127F76B5D00C61CB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A3AEFCF27F76B5D00C61CB7 /* NimbleCRUDExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A3AEFCE27F76B5D00C61CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEFDB27F76B5E00C61CB7 /* Preview Assets.xcassets in Resources */,
+				3A3AEFD827F76B5E00C61CB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A3AEFCC27F76B5D00C61CB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3AEFDD27F76B5E00C61CB7 /* Persistence.swift in Sources */,
+				3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */,
+				3A3AEFD627F76B5D00C61CB7 /* ContentView.swift in Sources */,
+				3A3AEFD427F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift in Sources */,
+				3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A3AEFE127F76B5E00C61CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A3AEFE227F76B5E00C61CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A3AEFE427F76B5E00C61CB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NimbleCRUDExample/Preview Content\"";
+				DEVELOPMENT_TEAM = D569SLUA95;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.back87.ios.NimbleCRUDExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A3AEFE527F76B5E00C61CB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NimbleCRUDExample/Preview Content\"";
+				DEVELOPMENT_TEAM = D569SLUA95;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.back87.ios.NimbleCRUDExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A3AEFCB27F76B5C00C61CB7 /* Build configuration list for PBXProject "NimbleCRUDExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3AEFE127F76B5E00C61CB7 /* Debug */,
+				3A3AEFE227F76B5E00C61CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A3AEFE327F76B5E00C61CB7 /* Build configuration list for PBXNativeTarget "NimbleCRUDExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A3AEFE427F76B5E00C61CB7 /* Debug */,
+				3A3AEFE527F76B5E00C61CB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/back-87/NimbleCRUD.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		3AFA586C27F7702E0086D0B2 /* XCRemoteSwiftPackageReference "NimbleCRUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/back-87/NimbleCRUD.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */;
+			productName = NimbleCRUD;
+		};
+		3AFA586D27F7702E0086D0B2 /* NimbleCRUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */;
+			productName = NimbleCRUD;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A3AEFDF27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodel */,
+			);
+			currentVersion = 3A3AEFDF27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodel */;
+			path = NimbleCRUDExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A3AEFC827F76B5C00C61CB7 /* Project object */;
+}
