@@ -29,7 +29,11 @@ class InMemoryCoreDataTesting {
         }
       })
         
-        
+      return container
+    }()
+    
+    
+    public func requiresTestData(container : NSPersistentContainer) -> Bool {
         //add actual sample data (random) * 1000 if it doesn't exist
         
         let fetch = NSFetchRequest<NSFetchRequestResult>(entityName: kTEST_ENTITY_NAME)
@@ -38,8 +42,7 @@ class InMemoryCoreDataTesting {
         do {
             try objectCount = container.viewContext.count(for: fetch)
             if objectCount < 1 {
-                print("No sample data exists, adding \(numberOfTestRows) sample rows with each supported CoreData type. This may take several seconds.")
-                addRandomTestData(container: container)
+                return true
             }
         } catch {
             // Replace this implementation with code to handle the error appropriately.
@@ -48,13 +51,10 @@ class InMemoryCoreDataTesting {
             fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
         }
         
-
-        
-        
-      return container
-    }()
+        return false
+    }
     
-    private func addRandomTestData(container : NSPersistentContainer) {
+    public func addRandomTestData(container : NSPersistentContainer) {
         
         //Int.random(in: 1...99)
         for index in 0..<numberOfTestRows {
@@ -105,16 +105,12 @@ class InMemoryCoreDataTesting {
             
             container.viewContext.insert(newItem)
         }
-        
-
-        
+    
         do {
             try container.viewContext.save()
         } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            fatalError("Unresolved error trying to save() viewContext \(nsError), \(nsError.userInfo)")
         }
     }
     
@@ -127,7 +123,6 @@ private func randomBool() -> Bool {
         return arc4random_uniform(2) == 0
 }
     
-
     
 func generateRandomDate(daysBack: Int)-> Date?{
             let day = arc4random_uniform(UInt32(daysBack))+1

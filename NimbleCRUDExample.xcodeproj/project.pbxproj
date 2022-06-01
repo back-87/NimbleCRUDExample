@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A3AEFD427F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */; };
-		3A3AEFD627F76B5D00C61CB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */; };
 		3A3AEFD827F76B5E00C61CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */; };
 		3A3AEFDB27F76B5E00C61CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */; };
-		3A3AEFDD27F76B5E00C61CB7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */; };
 		3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */; };
 		3A3AEFE827F76C6400C61CB7 /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */; };
 		3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */; };
@@ -21,10 +19,8 @@
 /* Begin PBXFileReference section */
 		3A3AEFD027F76B5D00C61CB7 /* NimbleCRUDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NimbleCRUDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NimbleCRUDExampleApp.swift; sourceTree = "<group>"; };
-		3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3A3AEFDF27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NimbleCRUDExample.xcdatamodel; sourceTree = "<group>"; };
 		3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCoreDataTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,9 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3A3AEFD327F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift */,
-				3A3AEFD527F76B5D00C61CB7 /* ContentView.swift */,
 				3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */,
-				3A3AEFDC27F76B5E00C61CB7 /* Persistence.swift */,
 				3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */,
 				3A3AEFD927F76B5E00C61CB7 /* Preview Content */,
 				3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */,
@@ -158,9 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3AEFDD27F76B5E00C61CB7 /* Persistence.swift in Sources */,
 				3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */,
-				3A3AEFD627F76B5D00C61CB7 /* ContentView.swift in Sources */,
 				3A3AEFD427F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift in Sources */,
 				3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */,
 			);
