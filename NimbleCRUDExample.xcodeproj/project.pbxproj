@@ -11,9 +11,9 @@
 		3A3AEFD827F76B5E00C61CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFD727F76B5E00C61CB7 /* Assets.xcassets */; };
 		3A3AEFDB27F76B5E00C61CB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */; };
 		3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */; };
-		3A3AEFE827F76C6400C61CB7 /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */; };
 		3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */; };
-		3AFA586E27F7702E0086D0B2 /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3AFA586D27F7702E0086D0B2 /* NimbleCRUD */; };
+		3A8E5D662849B7E40094187F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8E5D652849B7E40094187F /* MainView.swift */; };
+		3AB08AA12847DA710062997B /* NimbleCRUD in Frameworks */ = {isa = PBXBuildFile; productRef = 3AB08AA02847DA710062997B /* NimbleCRUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +23,7 @@
 		3A3AEFDA27F76B5E00C61CB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3A3AEFDF27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NimbleCRUDExample.xcdatamodel; sourceTree = "<group>"; };
 		3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCoreDataTesting.swift; sourceTree = "<group>"; };
+		3A8E5D652849B7E40094187F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,8 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3AEFE827F76C6400C61CB7 /* NimbleCRUD in Frameworks */,
-				3AFA586E27F7702E0086D0B2 /* NimbleCRUD in Frameworks */,
+				3AB08AA12847DA710062997B /* NimbleCRUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +62,7 @@
 				3A3AEFDE27F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld */,
 				3A3AEFD927F76B5E00C61CB7 /* Preview Content */,
 				3A3AEFE927F76EA400C61CB7 /* InMemoryCoreDataTesting.swift */,
+				3A8E5D652849B7E40094187F /* MainView.swift */,
 			);
 			path = NimbleCRUDExample;
 			sourceTree = "<group>";
@@ -91,8 +92,7 @@
 			);
 			name = NimbleCRUDExample;
 			packageProductDependencies = (
-				3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */,
-				3AFA586D27F7702E0086D0B2 /* NimbleCRUD */,
+				3AB08AA02847DA710062997B /* NimbleCRUD */,
 			);
 			productName = NimbleCRUDExample;
 			productReference = 3A3AEFD027F76B5D00C61CB7 /* NimbleCRUDExample.app */;
@@ -123,8 +123,7 @@
 			);
 			mainGroup = 3A3AEFC727F76B5C00C61CB7;
 			packageReferences = (
-				3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */,
-				3AFA586C27F7702E0086D0B2 /* XCRemoteSwiftPackageReference "NimbleCRUD" */,
+				3AB08A9F2847DA710062997B /* XCRemoteSwiftPackageReference "NimbleCRUD" */,
 			);
 			productRefGroup = 3A3AEFD127F76B5D00C61CB7 /* Products */;
 			projectDirPath = "";
@@ -153,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3AEFEA27F76EA400C61CB7 /* InMemoryCoreDataTesting.swift in Sources */,
+				3A8E5D662849B7E40094187F /* MainView.swift in Sources */,
 				3A3AEFD427F76B5D00C61CB7 /* NimbleCRUDExampleApp.swift in Sources */,
 				3A3AEFE027F76B5E00C61CB7 /* NimbleCRUDExample.xcdatamodeld in Sources */,
 			);
@@ -359,15 +359,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/back-87/NimbleCRUD.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		3AFA586C27F7702E0086D0B2 /* XCRemoteSwiftPackageReference "NimbleCRUD" */ = {
+		3AB08A9F2847DA710062997B /* XCRemoteSwiftPackageReference "NimbleCRUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/back-87/NimbleCRUD.git";
 			requirement = {
@@ -378,14 +370,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3A3AEFE727F76C6400C61CB7 /* NimbleCRUD */ = {
+		3AB08AA02847DA710062997B /* NimbleCRUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */;
-			productName = NimbleCRUD;
-		};
-		3AFA586D27F7702E0086D0B2 /* NimbleCRUD */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3A3AEFE627F76C6400C61CB7 /* XCRemoteSwiftPackageReference "NimbleCRUD" */;
+			package = 3AB08A9F2847DA710062997B /* XCRemoteSwiftPackageReference "NimbleCRUD" */;
 			productName = NimbleCRUD;
 		};
 /* End XCSwiftPackageProductDependency section */

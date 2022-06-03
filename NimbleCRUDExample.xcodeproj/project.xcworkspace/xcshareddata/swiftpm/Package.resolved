@@ -6,7 +6,16 @@
       "location" : "https://github.com/back-87/NimbleCRUD.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b2d6b48c32378b51c86992ec371fd86883b03e66"
+        "revision" : "27fba8874d1548a35df1e4be449b696b148d8223"
+      }
+    },
+    {
+      "identity" : "numerictext",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/back-87/NumericText.git",
+      "state" : {
+        "revision" : "bc002cd69a090104472586b31512088a5170fef0",
+        "version" : "1.1.3"
       }
     },
     {

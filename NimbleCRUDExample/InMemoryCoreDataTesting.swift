@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 
-let numberOfTestRows = 10000
+let numberOfTestRows = 1000
 let randomSizeLowerBounds = 0
 let randomSizeUpperBounds = 1000
 
@@ -105,9 +105,11 @@ class InMemoryCoreDataTesting {
             
             container.viewContext.insert(newItem)
         }
+        print("done insertion")
     
         do {
             try container.viewContext.save()
+            print("done save")
         } catch {
             let nsError = error as NSError
             fatalError("Unresolved error trying to save() viewContext \(nsError), \(nsError.userInfo)")
