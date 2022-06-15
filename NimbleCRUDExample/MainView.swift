@@ -22,22 +22,24 @@ struct MainView: View {
             if !showLoadingText {
                 NimbleCRUDView(memoryCoreDataTesting.inMemoryTestingPersistentContainer, entityName: kTEST_ENTITY_NAME, attributeNameToSortBy: kTEST_SORT_ATTRIBUTE)
             } else {
-                Color.clear
-                .onAppear {
-                        if memoryCoreDataTesting.requiresTestData(container: memoryCoreDataTesting.inMemoryTestingPersistentContainer) {
-                            
-                            showLoadingText = true
-                            
-                            showAlert.toggle()
-                           
-                                memoryCoreDataTesting.addRandomTestData(container: memoryCoreDataTesting.inMemoryTestingPersistentContainer)
+                
+                Text("Adding \(numberOfTestRows) test rows\n This may take a few seconds...")
+                    .onAppear {
+                        
+                        DispatchQueue.global().async {
+                            if memoryCoreDataTesting.requiresTestData(container: memoryCoreDataTesting.inMemoryTestingPersistentContainer) {
                                 
-                            showLoadingText = false //trust me you do not want NimbleCRUDView instantiated off mainQueue
-                            
-                        } else {
-                            showLoadingText = false
+                                    memoryCoreDataTesting.addRandomTestData(container: memoryCoreDataTesting.inMemoryTestingPersistentContainer) {
+                                        
+                                        showLoadingText = false
+                                        
+                                    }
+                         
+                            } else {
+                                showLoadingText = false
+                            }
                         }
-                }
+                    }
             }
     }
 }

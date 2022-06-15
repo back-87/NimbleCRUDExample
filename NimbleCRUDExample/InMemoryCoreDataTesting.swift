@@ -9,7 +9,7 @@ import Foundation
 import CoreData
 
 
-let numberOfTestRows = 1000
+let numberOfTestRows = 10000
 let randomSizeLowerBounds = 0
 let randomSizeUpperBounds = 1000
 
@@ -54,7 +54,7 @@ class InMemoryCoreDataTesting {
         return false
     }
     
-    public func addRandomTestData(container : NSPersistentContainer) {
+    public func addRandomTestData(container : NSPersistentContainer, completionBlock: () -> Void) {
         
         //Int.random(in: 1...99)
         for index in 0..<numberOfTestRows {
@@ -114,6 +114,8 @@ class InMemoryCoreDataTesting {
             let nsError = error as NSError
             fatalError("Unresolved error trying to save() viewContext \(nsError), \(nsError.userInfo)")
         }
+        
+        completionBlock()
     }
     
 private func randomString(length: Int) -> String {
